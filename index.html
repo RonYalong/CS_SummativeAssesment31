@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>&#129528;Fluffy Plushie Haven&#129528;</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bagel+Fat+One&family=Boogaloo&family=Caveat+Brush&family=Concert+One&family=DynaPuff:wght@400..700&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&family=Marck+Script&family=New+Tegomin&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pangolin&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Schoolbell&family=Slackey&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bagel+Fat+One&family=Boogaloo&family=Caveat+Brush&family=Concert+One&family=DynaPuff:wght@400..700&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&family=Marck+Script&family=New+Tegomin&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pangolin&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Schoolbell&family=Slackey&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fff7fa;
+      color: #444;
+    }
+
+    #products {
+        font-family: 'Bagel Fat One', sans-serif;
+    }
+
+    #products2 {
+        font-family: 'Bagel Fat One', sans-serif;
+    }
+
+    #products3 {
+        font-family: 'Bagel Fat One', sans-serif;
+    }
+
+    #products4 {
+        font-family: 'Bagel Fat One', sans-serif;
+    }
+
+    header {
+      font-family: 'Bagel Fat One', sans-serif;
+      background: #ffe6eb;
+      padding: 32px;
+      box-shadow: 0 2px 4px #ccc;
+    }
+
+    nav a {
+      font-family: 'Bagel Fat One', sans-serif;
+      color: #d07996;
+      text-decoration: none;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .product {
+      font-family: 'Pangolin', sans-serif;
+      border: 1px solid #eee;
+      padding: 16px;
+      border-radius: 8px;
+      background-color: #fff;
+      margin-bottom: 24px;
+      height: 100%;
+    }
+
+    #cart {
+      background: #fff0f5;
+      padding: 32px;
+      border-top: 2px solid #ffffff;
+      margin-top: 32px;
+      border-radius: 10px;
+      font-family: 'Pangolin', sans-serif;
+    }
+
+    .btn-custom {
+      background: #ffa9c1;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background: #ff85a7;
+    }
+
+    .btn-pink {
+      background-color: #ffa9c1;
+      color: #444;
+      border: none;
+    }
+
+    .btn-pink:hover {
+      background-color: #ff85a7;
+      color: #000;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header class="text-center">
+    <h1>&#129528;Fluffy Plushie Haven&#129528;</h1>
+    <p style="font-family: 'Pangolin', sans-serif;">Official Jellycat reseller</p>
+    <nav><a href="about.html">About Us</a></nav>
+  </header>
+
+  <main class="container my-5">
+    <section id="products">
+      <h2 class="mb-4 text-center">Best Seller Buddies</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/640w/products/3903/116481/SKY2DD__39428.1727978153.jpg?c=1" alt="Sky Dragon">
+            <h5 class="mt-2">Sky Dragon</h5>
+            <p>₱300</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Sky Dragon', 300)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/2879/119542/CLY6C__99205.1732748503.jpg?c=1" alt="Clyde Capybara">
+            <h5 class="mt-2">Clyde Capybara</h5>
+            <p>₱350</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Clyde Capybara', 350)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/2656/112270/BAS3B__88240.1727975196.jpg?c=1" alt="Beige Bunny">
+            <h5 class="mt-2">Bashful Beige Bunny</h5>
+            <p>₱280</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Bashful Beige Bunny', 280)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3729/117560/RR3F__69836.1732292512.jpg?c=1" alt="Frog">
+            <h5 class="mt-2">Ricky Rain Frog</h5>
+            <p>₱200</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Ricky Rain Frog', 200)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3797/119212/A6BEGR__39214.1732743337.jpg?c=1" alt="Egg">
+            <h5 class="mt-2">Amuseables Boiled Egg Graduation</h5>
+            <p>₱220</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Amuseables Boiled Egg Graduation', 220)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="products2">
+      <h2 class="mb-4 text-center">Reseller's Choice Buddies</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/2525/119068/A2BFL__68503.1732743231.jpg?c=1" alt="Flower">
+            <h5 class="mt-2">Amuseable Bouqet Of Flowers</h5>
+            <p>₱400</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Amuseable Bouqet Of Flowers', 400)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/4170/120248/WOM3BAT_4__42233.1741626388.jpg?c=1" alt="Wonda Wombat">
+            <h5 class="mt-2">Wonda Wombat</h5>
+            <p>₱380</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Wonda Wombat', 380)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3662/117520/HA2PCL__37228.1732291944.jpg?c=1" alt="Panda">
+            <h5 class="mt-2">Harry Panda Cub</h5>
+            <p>₱350</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Harry Panda Cub', 350)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/2993/114108/GLAM3R__12127.1727976512.jpg?c=1" alt="Reindeer">
+            <h5 class="mt-2">Sofia Reindeer</h5>
+            <p>₱320</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Sofia Reindeer', 320)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/4107/119912/ROCK3D__53854.1734430751.jpg?c=1" alt="Duck">
+            <h5 class="mt-2">Dorit Duckling</h5>
+            <p>₱360</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Dorit Duckling', 360)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="products3">
+      <h2 class="mb-4 text-center">Summer Buddies</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/4198/120430/A2CND_4__61628.1744035269.jpg?c=1" alt="coconut">
+            <h5 class="mt-2">Amuseables Aruba Coconut</h5>
+            <p>₱220</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Amuseables Aruba Coconut', 220)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/4199/120414/A2LMD_4__91697.1744035243.jpg?c=1" alt="Lemonade">
+            <h5 class="mt-2">Amuseables Lemonade</h5>
+            <p>₱220</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Amuseables Lemonade', 220)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/4205/120423/AS2SF__78455.1744035261.jpg?c=1" alt="Surfboard">
+            <h5 class="mt-2">Amuseable Sports Surfboard</h5>
+            <p>₱240</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Amuseable Sports Surfboard', 240)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3834/113581/CHP3SG__28835.1727976141.jpg?c=1" alt="Seagull">
+            <h5 class="mt-2">Chip Seagull</h5>
+            <p>₱320</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Chip Seagull', 320)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/4126/120019/HAP3BEE__51748.1736176736.jpg?c=1" alt="Bee">
+            <h5 class="mt-2">Albee Bee</h5>
+            <p>₱350</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Albee Bee', 350)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="products4">
+      <h2 class="mb-4 text-center">Ocean Buddies</h2>
+      <div class="row g-4">
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3552/116935/TUL3T__51424.1727978455.jpg?c=1" alt="Turtle">
+            <h5 class="mt-2">Tully Turtle</h5>
+            <p>₱350</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Tully Turtle', 350)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3793/115327/NAU6GS__53065.1727977364.jpg?c=1" alt="Seal">
+            <h5 class="mt-2">Nauticool Grey Seal</h5>
+            <p>₱250</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Nauticool Grey Seal', 250)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3734/116854/STL2OC__05864.1727978400.jpg?c=1" alt="Octopus cute baby">
+            <h5 class="mt-2">Storm Octopus</h5>
+            <p>₱280</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Storm Octopus', 280)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3297/115505/PAC3PUF__28249.1727977487.jpg?c=1" alt="Pufferfish">
+            <h5 class="mt-2">Pacey Pufferfish</h5>
+            <p>₱280</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Pacey Pufferfish', 280)">Add to Cart</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="product h-100 text-center">
+            <img src="https://cdn11.bigcommerce.com/s-fz2bnmwg7y/images/stencil/1000w/products/3648/113541/CC2C__67351.1727976111.jpg?c=1" alt="Mr. Crabs">
+            <h5 class="mt-2">Crispin Crab</h5>
+            <p>₱250</p>
+            <button class="btn btn-custom w-100" onclick="addToCart('Crispin Crab', 250)">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart" class="mt-5">
+      <h2 class="text-center">Your Cart</h2>
+      <ul id="cart-items" class="list-group my-3"></ul>
+      <p class="fw-bold">Total: ₱<span id="total">0</span></p>
+
+       <form id="checkoutForm" method="post" action="http://47.129.9.35/cs3/checkout.php">
+        <input type="text" name="cust_name" class="form-control my-2" placeholder="Your Name" required>
+        <input type="email" name="cust_email" class="form-control my-2" placeholder="Your Email" required>
+        <input type="text" name="cust_addr" class="form-control my-2" placeholder="Delivery Address" required>
+        <input type="hidden" name="cust_order" id="cust_order">
+        <button type="submit" class="btn btn-success w-100 mt-3" onclick="prepareCheckout()">Checkout</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    
+    let cart = [];
+    
+
+    function addToCart(name, price) {
+      cart.push({ prod_name: name, prod_price: price });
+      updateCart();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartList = document.getElementById('cart-items');
+      const totalField = document.getElementById('total');
+      cartList.innerHTML = '';
+      let total = 0;
+
+      cart.forEach((item, index) => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item d-flex justify-content-between align-items-center';
+        li.innerHTML = `${item.prod_name} - ₱${item.prod_price}
+          <button class="btn btn-sm btn-pink" onclick="removeFromCart(${index})">Remove</button>`;
+        cartList.appendChild(li);
+        total += item.prod_price;
+      });
+
+      totalField.textContent = total;
+    }
+
+    function prepareCheckout() {
+      const orderInput = document.getElementById('cust_order');
+      orderInput.value = JSON.stringify(cart);
+    }
+  </script>
+
+</body>
+</html>
